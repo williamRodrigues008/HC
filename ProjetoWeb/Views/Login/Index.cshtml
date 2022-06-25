@@ -1,0 +1,35 @@
+﻿@page
+@model ProjetoWeb.Views.Login.IndexModel
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+<div class="corpoInicio">
+    <div class="containerFormulario">
+        <div class="tituloFormulario">
+            <h3>Horas Complementares</h3>
+        </div>
+
+        <form asp-controller="Login" asp-action="Login">
+            <div class="formularioLogin">
+                <div class="divEmail">
+                    <label for="usuario" class="usuario">Usuário</label>
+                    <input type="email" name="usuario" class="usuario" placeholder="Insira seu email" />
+                </div>
+
+                <div class="divSenha">
+                    <label for="senha" class="lbSenha">Senha <i class="fa-brands fa-facebook"></i></label>
+                    <input type="password" name="senha" class="senha" placeholder="Insira sua senha" />
+                </div>
+                <div class="divSenha">
+                    <input class="btn" type="submit" value="Entrar" />
+                </div>
+            </div>
+        </form>
+
+        <div class="formaDeLogin">
+            <h6>Você também pode entrar com</h6>
+            <div class="divDosIconesDeLogin">
+                <div class="cardDeLogin"><i class="fa-brands fa-facebook"></i></div>
+            </div>
+        </div>
+    </div>
+</div>

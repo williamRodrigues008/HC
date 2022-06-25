@@ -1,0 +1,94 @@
+body {
+    background-image: url(../fundo4.jpg);    
+    background-size: 50% 110%;
+}
+.corpoInicio{
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFormulario {
+    width: 40%;
+    height: 65vh;
+    border-radius: 3px;
+    border: 1px solid purple;
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+    align-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction: column;
+    background-image: linear-gradient(To right, #ffffff, #dcb8ff);
+    box-shadow: 0em 1em 1em gray;
+}
+
+.formularioLogin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction:column;
+    height: 100%;
+}
+
+form{
+    width: 80%;
+}
+
+.divEmail, .divSenha {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.lbusuario, .lbEmail {
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 3vh;
+    border: 1px solid purple;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+   background-color: purple;
+   color:white;
+}
+.formaDeLogin{
+    width: 100%;
+    margin-top: 3vh;
+    height: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .containerFormulario{
+        width: 80%;
+    }
+
+
+
+}

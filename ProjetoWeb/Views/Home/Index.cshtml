@@ -1,0 +1,54 @@
+﻿@model ProjetoWeb.Views.IndexModel
+<link rel="stylesheet" href="~/css/index.css" />
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div class="slides">
+        <img class="imagemDoSlide" src="~/eng.webp" />
+    </div>
+    <h3>Eventos por Cursos</h3>
+    <hr/>
+    <div class="eventosPorCurso">
+
+       @* @foreach (var item in Model.EventosPorCurso()){
+            <div class="cardCurso">
+                <img class="imagemCurso" src="~/programacao.jpg"/>
+                <label class="nomeCurso">@item</label>
+            </div>
+
+        }*@
+
+       @* @foreach (var cursos in Model.EventosPorCurso())
+        {
+            <div class="cardCurso">
+                <img class="imagemCurso" src="~/programacao.jpg" />
+                <label class="nomeCurso">@cursos.NomeCurso</label>
+            </div>
+        }*@
+    </div>
+    <h3>Eventos Futuros</h3>
+    <hr/>
+    <div class="eventosFuturos">
+       
+
+      @*  @foreach (var eventos in Model.EventosFuturos())
+        {
+            <div class="cardEvento">
+                <div class="organizacao">
+                <img class="perfil" src="~/prof.png" />
+                    <label>@eventos.NomeEvento</label>
+                </div>
+
+                <div class="sobreEvento">
+
+                </div>
+
+            </div>
+        }*@
+
+    </div>
+
+</div>
