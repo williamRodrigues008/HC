@@ -69,11 +69,15 @@ hr {
 
 .organizacao{
     padding: 5px;
-    width: 50%;
+    width: 35%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .sobreEvento {
-    width: 50%;
+    width: 65%;
     height: 100%;
 }
 

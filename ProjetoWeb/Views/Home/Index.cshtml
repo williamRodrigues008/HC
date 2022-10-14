@@ -1,4 +1,5 @@
-﻿@model ProjetoWeb.Views.IndexModel
+﻿@model IEnumerable<ProjetoWeb.Classes.Eventos>
+
 <link rel="stylesheet" href="~/css/index.css" />
 
 @{
@@ -21,33 +22,38 @@
 
         }*@
 
-       @* @foreach (var cursos in Model.EventosPorCurso())
+        @foreach (var cursos in Model)
         {
             <div class="cardCurso">
-                <img class="imagemCurso" src="~/programacao.jpg" />
-                <label class="nomeCurso">@cursos.NomeCurso</label>
+                    <img class="imagemCurso" src="~/Imagens/imagem.png" />
+                <label class="nomeCurso">@cursos.NomeEvento</label>
             </div>
-        }*@
+        }
     </div>
     <h3>Eventos Futuros</h3>
     <hr/>
     <div class="eventosFuturos">
        
 
-      @*  @foreach (var eventos in Model.EventosFuturos())
+        @foreach (var eventos in Model)
         {
             <div class="cardEvento">
                 <div class="organizacao">
-                <img class="perfil" src="~/prof.png" />
-                    <label>@eventos.NomeEvento</label>
+                    <img class="perfil" src="~/Imagens/imagem.png" />
+                    <p>Palestrante <br/> @eventos.Palestrante<br/>
+                        <span style="font-size: 8pt;">@eventos.CargoPalestrante</span>
+                       </p>
                 </div>
 
                 <div class="sobreEvento">
-
+                        <h4>@eventos.NomeEvento</h4>
+                        <p style="text-align: left;">Data: @eventos.DataEvento.ToString("dd/MM/yyyy") <br/>
+                            Horas Complementares: @eventos.CargaHoraria h</p>
+                        <p>@eventos.SobreEvento</p>
                 </div>
 
             </div>
-        }*@
+        }
 
     </div>
 

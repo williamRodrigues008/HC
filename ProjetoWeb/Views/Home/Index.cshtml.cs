@@ -33,12 +33,12 @@ namespace ProjetoWeb.Views
         public List<Eventos> EventosFuturos()
         {
             var eventos = new List<Eventos>();
-            eventos.Add(new Eventos { Codigo = 1, Faculdade = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
-            eventos.Add(new Eventos { Codigo = 2, Faculdade = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
-            eventos.Add(new Eventos { Codigo = 3, Faculdade = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
-            eventos.Add(new Eventos { Codigo = 4, Faculdade = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
-            eventos.Add(new Eventos { Codigo = 5, Faculdade = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
-            eventos.Add(new Eventos { Codigo = 6, Faculdade = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
+            eventos.Add(new Eventos { Id = 1, Organizador = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
+            eventos.Add(new Eventos { Id = 2, Organizador = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
+            eventos.Add(new Eventos { Id = 3, Organizador = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
+            eventos.Add(new Eventos { Id = 4, Organizador = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
+            eventos.Add(new Eventos { Id = 5, Organizador = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
+            eventos.Add(new Eventos { Id = 6, Organizador = "Fadesa", NomeEvento = "Semana Academica de Pedagogia", Palestrante = "Kennedy Miné" });
 
             return eventos;
         }

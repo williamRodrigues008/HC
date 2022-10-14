@@ -1,7 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
+﻿a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -107,8 +104,8 @@ body {
 }
 
 .perfil {
-    width: 4vw;
-    height: 6vh;
+    width: 7vw;
+    height: 13vh;
     border-radius: 50%;
 }
 

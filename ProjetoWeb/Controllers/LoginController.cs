@@ -18,11 +18,10 @@ namespace ProjetoWeb.Controllers
 
 		public async Task<IActionResult> Login(string usuario, string senha)
 		{
-			//string conexaoString = ConfigurationManager.ConnectionStrings["connectionStrings"].ConnectionString;
-			SqlConnection conexao = new SqlConnection(@"Data Source=DESKTOP-48ULVVB\NASERVER;Initial Catalog=HorasComplementares;Integrated Security=True");
+			SqlConnection conexao = new SqlConnection(@"Data Source=WILLIAM\NASERVER;Initial Catalog=HorasComplementares;Integrated Security=True");
 
 			await conexao.OpenAsync();
-			string retornoDados = $"select * from Usuarios where usuario = '{usuario}' and senha = '{senha}'";
+			string retornoDados = $"select * from Usuarios where email = '{usuario}' and senha = '{senha}'";
 			SqlCommand comandoSql = new(retornoDados, conexao);
 
 			SqlDataReader leitor = comandoSql.ExecuteReader();
@@ -49,7 +48,6 @@ namespace ProjetoWeb.Controllers
 				});
 
 				return RedirectToAction("Index", "Home");
-				//return RedirectToAction("Index");
 			}
 			else
 			{
